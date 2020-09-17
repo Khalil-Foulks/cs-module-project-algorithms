@@ -11,9 +11,6 @@ Returns: a List of integers
 
 def product_of_all_other_numbers(arr):
     # Your code here
-    
-    # for each num in array
-    # multiply all nums in array and divide by current index
 
     # create empty list to store totals
     newArray = []
@@ -24,7 +21,7 @@ def product_of_all_other_numbers(arr):
         total = 1
         # for each num in array 
         for j in range(0, len(arr)):
-        #  if urrent index of 1st loop isn't the same of index of 2nd loop
+        #  if current index of 1st loop isn't the same of index of 2nd loop
             if i != j:
                 # multiply each value by total number
                 total *= arr[j]

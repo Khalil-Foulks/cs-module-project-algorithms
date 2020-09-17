@@ -22,7 +22,7 @@ def sliding_window_max(nums, k):
     stop = len(nums) - k + 1
 
 
-    # for each num in the array
+    # for each num in the array; repeat until (i * -1) == -k
     for num in range(0, stop):
     # slice the input array using start and end
         window = nums[start:k + end]
@@ -34,7 +34,6 @@ def sliding_window_max(nums, k):
         start += 1
     # increment ending position of window
         end += 1
-    # repeat until (i * -1) == -k
     return max_values
 
 
